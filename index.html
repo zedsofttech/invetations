@@ -149,6 +149,99 @@ p{line-height:1.8;font-size:17px}
 .pl{position:fixed;right:20px;bottom:82px;z-index:20;width:46px;height:30px;display:none}
 .mpanel{bottom:90px}
 .mpanel .close{float:right;border:0;background:none;color:var(--gold);font-size:18px;cursor:pointer}
+
+.mapph{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--gold);
+ background:linear-gradient(135deg,#f3ecd8,#fffdf7);font:700 20px 'Times New Roman',serif}
+.mapph .btn{animation:none;font-size:17px;padding:12px 28px}
+.auto{position:fixed;left:20px;bottom:20px;z-index:20;height:52px;padding:0 18px;border-radius:30px;border:0;background:var(--gold);color:#fff;
+ font:600 13px 'Lora',serif;letter-spacing:.08em;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.25);display:none}
+.auto.show{display:block}
+
+/* ================= DESIGN REFINEMENT ================= */
+:root{--gold2:#a98530;--ivory:#fffdf8;--deep:#5b4415}
+body{background:#efe8d6}
+.stage{box-shadow:0 0 80px rgba(90,70,20,.18);border-color:var(--gold2)}
+.toile{opacity:.42}
+section{padding:96px 28px}
+
+/* cover */
+.card{background:linear-gradient(180deg,#fffdf8,#faf6ea);border:1px solid var(--line);
+  box-shadow:0 30px 70px rgba(90,70,20,.28),inset 0 0 0 7px var(--cream),inset 0 0 0 8px rgba(185,165,107,.55);padding:34px 28px 52px}
+.card h1{font-size:54px;background:linear-gradient(135deg,#7b5e1f,#c9a64e 50%,#7b5e1f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.card .amp{font-size:26px;-webkit-text-fill-color:var(--gold2)}
+.date{letter-spacing:.28em;text-transform:uppercase;font-size:15px}
+.warm{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px}
+.btn{background:linear-gradient(135deg,#8a6a24,#b9923a);letter-spacing:.14em;text-transform:uppercase;font-size:15px;padding:15px 38px}
+
+/* hero */
+.hero{padding:110px 24px 80px}
+.hero small{display:block;margin-bottom:18px;color:var(--gold2)}
+.hero h2{background:linear-gradient(135deg,#6f5219,#c9a64e 50%,#6f5219);-webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:none;letter-spacing:.01em}
+.hero h2 i{-webkit-text-fill-color:var(--gold2);font-weight:500}
+.hero p{letter-spacing:.35em;text-transform:uppercase;font-size:14px;margin-top:10px}
+.divider{color:var(--gold2);font-size:16px}
+.divider::before,.divider::after{width:64px;background:linear-gradient(90deg,transparent,var(--line))}
+.divider::after{background:linear-gradient(270deg,transparent,var(--line))}
+
+/* invitation card */
+.card-sec{background:var(--ivory);border:1px solid var(--line);padding:70px 34px;position:relative;
+  box-shadow:0 22px 55px rgba(90,70,20,.18),inset 0 0 0 8px var(--ivory),inset 0 0 0 9px rgba(185,165,107,.5)}
+.card-sec p{font-size:18px;line-height:2}
+.card-sec b{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--gold);font-weight:600;letter-spacing:.02em}
+.eyebrow{color:var(--gold2)}
+
+/* countdown */
+.count{gap:12px}
+.count div{min-width:92px;padding:20px 10px;border:1px solid var(--line);border-radius:14px;
+  background:linear-gradient(180deg,#fff,#fbf6e8);box-shadow:0 12px 28px rgba(90,70,20,.12)}
+.count b{font-size:42px}
+.count span{color:var(--gold2)}
+
+/* section headings */
+.sec{padding:84px 24px}
+.sec h4{font:600 30px 'Cormorant Garamond',serif;text-transform:none;letter-spacing:.04em}
+.sec h4::after{content:"";display:block;width:90px;height:1px;margin:14px auto 0;
+  background:linear-gradient(90deg,transparent,var(--gold2),transparent)}
+
+/* photo */
+.frame{box-shadow:14px 14px 0 rgba(185,165,107,.3),0 30px 60px rgba(90,70,20,.25)}
+.frame figcaption{font-size:38px}
+
+/* venue */
+.sec .mapbox{border-radius:18px;box-shadow:0 18px 40px rgba(90,70,20,.2)}
+.dir{padding:13px 26px;border:1px solid var(--gold2);border-radius:40px;transition:.25s;font-size:16px}
+.dir:hover{background:var(--gold);color:#fff;text-decoration:none}
+
+/* guestbook */
+.gb{max-width:420px}
+.gb input,.gb textarea{background:#fff;border-radius:12px;box-shadow:inset 0 1px 3px rgba(90,70,20,.08)}
+.gb .btn{width:100%;font:700 14px 'Lora',serif;letter-spacing:.16em}
+.wish{background:#fff;border:1px solid #eadfbd;border-radius:12px;padding:14px 16px;margin-bottom:10px}
+.wishes{max-width:420px}
+
+/* footer */
+.foot .box{border-radius:4px;box-shadow:0 20px 50px rgba(90,70,20,.2);outline:1px solid var(--line);outline-offset:-10px}
+
+/* scroll reveal – softer */
+.rv{transform:translateY(26px);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1)}
+
+/* auto scroll control + progress bar */
+.prog{position:fixed;top:0;left:0;right:0;height:3px;z-index:30;background:rgba(185,165,107,.2);display:none}
+.prog.show{display:block}
+.prog i{display:block;height:100%;background:linear-gradient(90deg,var(--gold2),#d9b95e);transform-origin:left;transform:scaleX(0)}
+.auto{left:20px;bottom:20px;height:52px;padding:0 20px 0 16px;border-radius:30px;background:var(--gold);
+  display:none;align-items:center;gap:10px;font:600 13px 'Lora',serif;letter-spacing:.08em;box-shadow:0 8px 22px rgba(0,0,0,.28);transition:background .25s,transform .25s}
+.auto.show{display:flex}
+.auto:hover{transform:translateY(-2px)}
+.auto.off{background:#fff;color:var(--gold);outline:1px solid var(--gold)}
+.auto .ai{font-size:13px}
+@media(max-width:480px){
+  .card h1{font-size:46px}
+  .auto .ai+span{display:none}.auto{padding:0 18px;min-width:52px;justify-content:center}
+  .count div{min-width:72px}.count b{font-size:34px}
+}
+@media(prefers-reduced-motion:reduce){.petal{display:none}}
 </style>
 </head>
 <body>
@@ -230,8 +323,7 @@ p{line-height:1.8;font-size:17px}
       <h4>Taj Inn Thazhekode</h4>
       <p class="vn" style="display:none"></p>
       <p style="font-size:15px;line-height:1.9">TAJ INN THAZHEKODE<br>Malappuram, 679341</p>
-      <div class="mapbox"><iframe loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Taj+Inn+Thazhekode+Malappuram&z=16&output=embed"></iframe></div>
+      <div class="mapbox" id="mapbox"><div class="mapph"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><b>Taj Inn Thazhekode</b><button class="btn" id="showMap" type="button">Show Map</button></div></div>
       <a class="dir" target="_blank" rel="noopener"
         href="https://share.google/0BFJkfAkGt7uwUUNi">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Open in Google Maps</a>
@@ -251,7 +343,7 @@ p{line-height:1.8;font-size:17px}
       <svg aria-hidden="true"><rect width="100%" height="100%" fill="url(#p)"/></svg>
       <div class="box">
         <p>Your presence and blessings mean the world to us. Thank you for being part of our special day!</p>
-        
+        <small>♡ chungdoi.com</small>
       </div>
     </footer>
   </main>
@@ -263,6 +355,8 @@ p{line-height:1.8;font-size:17px}
   <div class="ctl"><button id="prev" aria-label="Previous">⏮</button><button id="pp" aria-label="Play or pause">▶</button><button id="next" aria-label="Next">⏭</button></div>
   <ul id="plist"></ul>
 </div>
+<div class="prog" id="prog" aria-hidden="true"><i id="progBar"></i></div>
+<button class="auto" id="auto" type="button" aria-label="Toggle auto scroll"><span class="ai" id="ai">❚❚</span><span id="at">Auto scroll</span></button>
 <button class="music" id="music" aria-label="Play or pause music"><span id="mi">♪</span><span class="eq"><i></i><i></i><i></i><i></i></span><span class="lbl" id="ml">Music</span></button>
 
 
@@ -367,20 +461,69 @@ function openInvite(){
   const cover = document.getElementById('cover'), main = document.getElementById('main');
   cover.classList.add('leaving');
   play();   // allowed: triggered by the Open click
-  mbtn.classList.add('show');setState(true);
+  mbtn.classList.add('show');autoBtn.classList.add('show');document.getElementById('prog').classList.add('show');setState(true);
   setTimeout(() => {
     cover.style.display = 'none'; main.classList.add('show'); window.scrollTo(0,0); observe();
   }, 800);
 }
 document.getElementById('openBtn').onclick = openInvite;
 ['click','touchstart','scroll'].forEach(ev=>addEventListener(ev,()=>{if(mbtn.classList.contains('show')&&!on&&!window._paused)play()},{once:true,passive:true}));
-if (location.search.includes('open=1')) { mbtn.classList.add('show'); document.getElementById('cover').style.display='none'; document.getElementById('main').classList.add('show'); setTimeout(observe,50); }
+if (location.search.includes('open=1')) { mbtn.classList.add('show');document.getElementById('auto').classList.add('show');document.getElementById('prog').classList.add('show'); document.getElementById('cover').style.display='none'; document.getElementById('main').classList.add('show'); setTimeout(observe,50); }
 
 // scroll reveal
 function observe(){
   const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('in')), {threshold:.2});
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
 }
+
+
+// show map on tap (also auto-loads when scrolled into view)
+function showMap(){const b=document.getElementById('mapbox');if(b.querySelector('iframe'))return;
+  b.innerHTML='<iframe allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Taj+Inn+Thazhekode+Malappuram&z=16&output=embed"></iframe>'}
+document.getElementById('showMap').onclick=showMap;
+new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){showMap();o.disconnect()}}),{threshold:.4}).observe(document.getElementById('mapbox'));
+
+// auto scroll: smooth continuous reading-pace scroll; pauses on touch/wheel, resumes after idle
+const autoBtn=document.getElementById('auto'),ai=document.getElementById('ai'),at=document.getElementById('at'),
+      progBar=document.getElementById('progBar');
+const SPEED=42,RESUME_MS=2500;            // pixels per second, idle time before resuming
+let autoOn=true,paused=false,resumeT=null,last=0,acc=0,atEnd=false,raf=null;
+const docH=()=>Math.max(document.documentElement.scrollHeight,document.body.scrollHeight);
+const maxY=()=>docH()-innerHeight;
+function label(){
+  if(atEnd){ai.textContent='↑';at.textContent='Replay';return}
+  ai.textContent=autoOn?'❚❚':'▶';at.textContent=autoOn?'Auto scroll':'Resume scroll';
+  autoBtn.classList.toggle('off',!autoOn);
+}
+function loop(t){
+  raf=requestAnimationFrame(loop);
+  const dt=Math.min(.05,(t-last)/1000||0);last=t;
+  const m=maxY();
+  progBar.style.transform='scaleX('+(m>0?Math.min(1,scrollY/m):0)+')';
+  if(!autoOn||paused||atEnd||!document.getElementById('main').classList.contains('show'))return;
+  const a=document.activeElement;
+  if(a&&/INPUT|TEXTAREA/.test(a.tagName))return;
+  acc+=SPEED*dt;
+  if(acc>=1){const d=Math.floor(acc);acc-=d;window.scrollBy(0,d)}
+  if(scrollY>=m-2){atEnd=true;label()}
+}
+function userTouch(){
+  paused=true;acc=0;clearTimeout(resumeT);
+  resumeT=setTimeout(()=>{paused=false},RESUME_MS);
+}
+['wheel','touchstart','touchmove','mousedown','keydown'].forEach(ev=>addEventListener(ev,e=>{
+  if(e.target===autoBtn||autoBtn.contains(e.target))return;
+  userTouch();
+  if(atEnd&&scrollY<maxY()-80){atEnd=false;label()}   // guest scrolled back up: allow auto scroll again
+},{passive:true}));
+addEventListener('touchend',()=>{clearTimeout(resumeT);resumeT=setTimeout(()=>{paused=false},RESUME_MS)},{passive:true});
+autoBtn.onclick=()=>{
+  if(atEnd){atEnd=false;autoOn=true;paused=false;document.documentElement.style.scrollBehavior='smooth';scrollTo(0,0);
+    setTimeout(()=>{document.documentElement.style.scrollBehavior=''},900);label();return}
+  autoOn=!autoOn;paused=false;acc=0;label();
+};
+document.documentElement.style.scrollBehavior='auto';   // smooth-behavior would fight per-frame scrolling
+label();raf=requestAnimationFrame(loop);
 
 // countdown
 function tick(){
