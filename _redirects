@@ -1,2 +1,3 @@
 # Netlify redirects: Route all requests to index.html with a 200 HTTP status
 /*    /index.html   200
+
